@@ -42,5 +42,5 @@ cold_grades.py
 Average complexity: C (17.0)
 Violations by code: B007 x3
 Highest cyclomatic complexity: run = 17 (C)
-Longest function: run() = ___ lines (line 8 to line ___)
-Worst function parameters: run() = ___ parameters
+Longest function: run() = 45 lines (line 8 to line 52)
+Worst function parameters: run() = 6 parameters
