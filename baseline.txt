@@ -1,0 +1,46 @@
+﻿B007 Loop control variable `g` not used within loop body
+  --> cold_grades.py:30:20
+   |
+28 |             g = "F"
+29 |         out.append((name, avg, g))
+30 |     for name, avg, g in out:
+   |                    ^
+31 |         if avg >= 85:
+32 |             lg = "A"
+   |
+help: Rename unused `g` to `_g`
+
+B007 Loop control variable `name` not used within loop body
+  --> cold_grades.py:41:9
+   |
+39 |         print(f"{name}: {avg:.1f} ({lg})")
+40 |     passed = 0
+41 |     for name, avg, g in out:
+   |         ^^^^
+42 |         if avg >= 85:
+43 |             x = "A"
+   |
+help: Rename unused `name` to `_name`
+
+B007 Loop control variable `g` not used within loop body
+  --> cold_grades.py:41:20
+   |
+39 |         print(f"{name}: {avg:.1f} ({lg})")
+40 |     passed = 0
+41 |     for name, avg, g in out:
+   |                    ^
+42 |         if avg >= 85:
+43 |             x = "A"
+   |
+help: Rename unused `g` to `_g`
+
+Found 3 errors.
+cold_grades.py
+    F 8:0 run - C (17)
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: C (17.0)
+Violations by code: B007 x3
+Highest cyclomatic complexity: run = 17 (C)
+Longest function: run() = ___ lines (line 8 to line ___)
+Worst function parameters: run() = ___ parameters
